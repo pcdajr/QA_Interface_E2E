@@ -7,9 +7,7 @@ PRÉ-CONDIÇÃO: USUÁRIO CADASTRADO NO SISTEMA</br>
 **[DADO]**:</br>
 Usuário acessa a tela de login </br>
 **[QUANDO]**:</br>
-Insere o username </br>
-**[E]**:</br>
-Insere a senha </br>
+Insere o username/senha </br>
 **[E]**:</br>
 Clica no botão de login para entrar </br>
 **[ENTAO]**:</br>
