@@ -9,7 +9,7 @@ Funcionalidade: Login no sistema
     Dado que eu esteja na página de login
 
   Cenário: Login com sucesso
-    Quando eu insiro o usuário "admin@teste.com" e a senha "123456"
+    [Quando] eu insiro o usuário "admin@teste.com" e a senha "123456"
     E clico no botão de login
     Então eu devo ser redirecionado para a página inicial
     E devo ver a mensagem "Bem-vindo, Admin"
