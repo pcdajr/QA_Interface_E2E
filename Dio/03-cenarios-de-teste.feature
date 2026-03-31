@@ -1,7 +1,7 @@
 ## CENÁRIO 01
 
 Feature: BASEADO NO USER STORY 01 - US01
-Scenario: LOGIN COM CREDENCIAL VÁLIDA
+Scenario: LOGIN
 PRÉ-CONDIÇÃO: USUÁRIO CADASTRADO NO SISTEMA
 
  Given Usuário na tela de login 
