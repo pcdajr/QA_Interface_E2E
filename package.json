@@ -20,6 +20,6 @@
   },
   "homepage": "https://github.com/pcdajr/QA_Interface_E2E#readme",
   "devDependencies": {
-    "cypress": "^15.14.0"
+    "cypress": "^15.14.1"
   }
 }
