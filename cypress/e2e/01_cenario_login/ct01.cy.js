@@ -2,7 +2,7 @@
 describe('Página de login Saucedemo', () => {
 
    beforeEach(() => {
-    cy.visit('https://www.saucedemo.com/'); // antes do caso teste, visitando a url.
+    cy.visit('/'); // antes do caso teste, visitando a url.
   });
 
   it('Login válido', () => {

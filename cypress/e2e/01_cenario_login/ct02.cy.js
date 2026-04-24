@@ -1,7 +1,7 @@
 describe('Página de login Saucedemo', () => {
 
    beforeEach(() => {
-    cy.visit('https://www.saucedemo.com/'); 
+    cy.visit('/'); 
   });
 
   it('Login bloqueado - não deve entrar no sistema', () => {
