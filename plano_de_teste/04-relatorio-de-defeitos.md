@@ -1,3 +1,6 @@
+ **ESSA MATRIX DE RESULTADO FOI FEITA POR MIM EM TESTANDO A INTERFACE, NAVEGANDO MANUALMENTE.** 
+
+
 ## CENÁRIO 01
 
 <img width="1191" height="452" alt="Cena 1" src="https://github.com/user-attachments/assets/412a29b6-1cf9-4e96-9b3a-dff129c5ea48" />
@@ -9,3 +12,5 @@
 ## CENÁRIO 03
 
 <img width="1188" height="446" alt="Cena 3" src="https://github.com/user-attachments/assets/b939a3e6-4918-4fd6-9e63-3508d560e025" />
+
+

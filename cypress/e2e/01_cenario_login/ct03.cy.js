@@ -1,0 +1,13 @@
+describe('Página de login Saucedemo', () => {
+
+   beforeEach(() => {
+    cy.visit('https://www.saucedemo.com/'); 
+  });
+
+  it('senha inválida - não deve entrar no sistema', () => {
+    cy.get('[data-test="username"]').type("locked_out_user");
+    cy.get('[data-test="password"]').type("error");
+    cy.get('[data-test="login-button"]').click();
+    
+  })
+}) 

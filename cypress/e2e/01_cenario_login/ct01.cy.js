@@ -1,9 +1,14 @@
+
 describe('Página de login Saucedemo', () => {
-  it('Deve carregar a página do login/Home', () => {
-    cy.visit('https://www.saucedemo.com/');
-    cy.get('[data-test="username"]').type("standard_user");
-    cy.get('[data-test="password"]').type("secret_sauce");
-    cy.get('[data-test="login-button"]').click();
+
+   beforeEach(() => {
+    cy.visit('https://www.saucedemo.com/'); // antes do caso teste, visitando a url.
+  });
+
+  it('Login válido', () => {
+    cy.get('[data-test="username"]').type("standard_user");   //inserindo nome
+    cy.get('[data-test="password"]').type("secret_sauce");    //inserindo senha   
+    cy.get('[data-test="login-button"]').click();             //clicando
     
   })
 }) 
