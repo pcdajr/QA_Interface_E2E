@@ -1,0 +1,106 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2026-04-26T01:33:18.888Z",
+    "end": "2026-04-26T01:33:20.460Z",
+    "duration": 1572,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "4299b195-b2fb-43c6-8be0-14f0d3c69ddf",
+      "title": "",
+      "fullFile": "cypress\\e2e\\01_cenario_login\\ct03.cy.js",
+      "file": "cypress\\e2e\\01_cenario_login\\ct03.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "26d9a4e5-834d-428b-9b6d-b1885e57e474",
+          "title": "Página de login Saucedemo",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "senha inválida - não deve entrar no sistema",
+              "fullTitle": "Página de login Saucedemo senha inválida - não deve entrar no sistema",
+              "timedOut": null,
+              "duration": 1466,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('[data-test=\"username\"]').type(\"locked_out_user\");\ncy.get('[data-test=\"password\"]').type(\"error\");\ncy.get('[data-test=\"login-button\"]').click();",
+              "err": {},
+              "uuid": "1d8dae7b-2436-4be2-be70-e71218273bfe",
+              "parentUUID": "26d9a4e5-834d-428b-9b6d-b1885e57e474",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "1d8dae7b-2436-4be2-be70-e71218273bfe"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 1466,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.4"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results",
+        "overwrite": false,
+        "html": true,
+        "json": true,
+        "timestamp": "mmddyyyy_HHMMss"
+      },
+      "version": "6.3.2"
+    }
+  }
+}

@@ -1,0 +1,106 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2026-04-26T01:55:23.082Z",
+    "end": "2026-04-26T01:55:25.837Z",
+    "duration": 2755,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "fd0d10eb-df6b-4183-8fa5-129a82bd9fe6",
+      "title": "",
+      "fullFile": "cypress\\e2e\\_cenario_login\\ct01_user_valido.cy.js",
+      "file": "cypress\\e2e\\_cenario_login\\ct01_user_valido.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "86a4c036-25f9-49e4-9940-b66d5b5b4f25",
+          "title": "Página de login Saucedemo",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Login válido mas sem toast notificacion(\"logado com sucesso\")",
+              "fullTitle": "Página de login Saucedemo Login válido mas sem toast notificacion(\"logado com sucesso\")",
+              "timedOut": null,
+              "duration": 2675,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('[data-test=\"username\"]').type(\"standard_user\"); //inserindo nomeS\ncy.get('[data-test=\"password\"]').type(\"secret_sauce\"); //inserindo senha   \ncy.get('[data-test=\"login-button\"]').click(); //clicando",
+              "err": {},
+              "uuid": "e4f67682-08ef-4a21-8ae0-2343dbddd49c",
+              "parentUUID": "86a4c036-25f9-49e4-9940-b66d5b5b4f25",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "e4f67682-08ef-4a21-8ae0-2343dbddd49c"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 2675,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.4"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results",
+        "overwrite": false,
+        "html": true,
+        "json": true,
+        "timestamp": "mmddyyyy_HHMMss"
+      },
+      "version": "6.3.2"
+    }
+  }
+}

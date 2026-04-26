@@ -1,0 +1,106 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2026-04-26T03:57:57.092Z",
+    "end": "2026-04-26T03:58:03.786Z",
+    "duration": 6694,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "5667f2cf-a0a0-4a98-a3be-829ea5f11782",
+      "title": "",
+      "fullFile": "cypress\\e2e\\_login\\ct06_sob_perfomance.cy.js",
+      "file": "cypress\\e2e\\_login\\ct06_sob_perfomance.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "17cee8ed-2b2b-4982-af84-1cfb6d5483bc",
+          "title": "Página de login Saucedemo",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Usuário válido sob perfomance ",
+              "fullTitle": "Página de login Saucedemo Usuário válido sob perfomance ",
+              "timedOut": null,
+              "duration": 6622,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('[data-test=\"username\"]').type(\"performance_glitch_user\");\ncy.get('[data-test=\"password\"]').type(\"secret_sauce\");\ncy.get('[data-test=\"login-button\"]').click();\n/*Após o click, se a url da página de produtos não mudar antes do tempo do timeout, ele força o erro.\n  A idéia é que esse tratamento capture a baixa performance para válidação e métrica. Sem o tratamento ele\n  ta passando na validação mesmo com tempo alto de requisição e resposta.*/\ncy.url({\n  timeout: 3000\n}).should('include', 'https://www.saucedemo.com/inventory.html');",
+              "err": {},
+              "uuid": "9a6317a0-6e0b-4212-bd13-2ecbb4cd534d",
+              "parentUUID": "17cee8ed-2b2b-4982-af84-1cfb6d5483bc",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "9a6317a0-6e0b-4212-bd13-2ecbb4cd534d"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 6622,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.4"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results",
+        "overwrite": false,
+        "html": true,
+        "json": true,
+        "timestamp": "mmddyyyy_HHMMss"
+      },
+      "version": "6.3.2"
+    }
+  }
+}
