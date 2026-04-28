@@ -6,7 +6,7 @@
 
 :dart:**Arquitetura de domínio: Iniciamente foi utilizado a funcional/comportamental, focando nas 3 principais funcionalidades visualisadas pelas histórias de usuários e as gherkins modeladas depois de navegar pelo protótipo já preexistente.**
 
-:dart: **Como rodar pós instalação:</br>
+:dart: **Como rodar pós instalação:**</br>
 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;**npx cypress open = abrindo UI.** </br>
 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;**npx cypress run = sem abrir UI (Modo Headless).**
 
