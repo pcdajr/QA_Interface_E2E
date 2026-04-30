@@ -10,4 +10,4 @@
 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;**npx cypress open = abrindo UI.** </br>
 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;**npx cypress run = sem abrir UI (Modo Headless).**
 
-:dart: **O que foi testado: (Login, Carrinho, Checkout).**
+:dart: **O que foi testado: (Login, Tela de produtos/Carrinho, Pagamento/Checkout).**
