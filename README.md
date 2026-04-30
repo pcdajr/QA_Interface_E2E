@@ -13,7 +13,7 @@
 :dart: **O que foi testado: (Login, Tela de produtos/Carrinho, Pagamento/Checkout).** </br>
 
 ## Highlights do plano de testes
-Para ver completo o doc está dentro das pastas do projeto.
+**Para ver completo o doc está dentro das pastas do projeto.**
 
 <img width="252" height="164" alt="image" src="https://github.com/user-attachments/assets/9c8015a6-c8f2-4c76-aea2-75dd8f9ea19f" />
 
