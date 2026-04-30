@@ -1,6 +1,7 @@
 
 describe('Tela de produtos - Saucedemo', () => {
 
+ 
    beforeEach(() => {
     cy.visit('/'); // antes do caso teste, visitando a url.
   });
@@ -23,21 +24,27 @@ describe('Tela de produtos - Saucedemo', () => {
             .should("exist")
             .and("be.visible")            
             .and('have.text',comparador.toString());
+            
 
           });
 
 
 // REMOVENDO ITENS DO CARRINHO
-        cy.get('[data-test^="remove"]').each((elemento, indice) => { 
-           const total = (indice + 1);     
-           cy.wrap(elemento).should("be.visible").and("have.text",'Remove').click();
-           const decremento = (total - total );
+           
+           
+    cy.get('[data-test^="remove"]').each((elemento, indice) => { 
+            
+            cy.wrap(elemento)
+              .should("be.visible")
+              .and("have.text",'Remove')    
+              .click();
 
-            cy.get('[data-test="shopping-cart-badge"]').should("exist")
-            .and("be.visible")            
-            .and('have.text',decremento.toString());            
-        
-        });     
+     });     
+    
+    
+    cy.get('[data-test="shopping-cart-badge"]').should('not.exist');
+
+
     
   });
 

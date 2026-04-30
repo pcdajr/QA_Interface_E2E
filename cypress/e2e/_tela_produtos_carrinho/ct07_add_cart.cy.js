@@ -15,7 +15,7 @@ describe('Tela de produtos - Saucedemo', () => {
       /*****
      cy.get('[data-test="add-to-cart-sauce-labs-backpack"]').click();  
         cy.get('[data-test="shopping-cart-badge"]')
-         .should("exist")                               aqui foi meu teste um por um, estaticamente."
+         .should("exist")                               aqui foi meu 1º teste um por um, estaticamente."
          .and("be.visible")            
          .and('have.text','1')
       ******/
@@ -36,8 +36,6 @@ describe('Tela de produtos - Saucedemo', () => {
                linha 26 foi wrap pra envelopar o jquery retornado e clicando.
                linha 28 até 31 asserção para a notificação da quantidade no icone do carrinho depois dos
                verificando de incrementou.  Uhuuu  */ 
-
-             
         
         });     
     
