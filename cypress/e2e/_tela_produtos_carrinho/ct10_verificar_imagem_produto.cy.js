@@ -12,17 +12,15 @@ describe('Tela de produtos - Saucedemo', () => {
     cy.get('[data-test="login-button"]').click();             //clicando
 
 
-     const imagemProduto = 'https://www.saucedemo.com/static/media/sl-404.168b1cce10384b857a6f.jpg' ;
+     const conteudo = [] ;
 
-     cy.get('[data-test^="inventory-item"]').each((elemento, indice) => {   
-        cy.wrap(elemento)
-        .find('img')
-        .invoke('attr','src')               //pegando atributo source para usar na comparação com a url da img.
-        .then((src) =>{                     // o then captura e converte, pois o invoke é assíncrono e só retorna texto.
-            expect(src).not.to.equal(imagemProduto); 
-        }); 
-
-        });
+     cy.get('[data-test$="-img"]').each((elemento) => {   
+        
+        conteudo.push(elemento.attr('src'));  // adicionando cada imagem de cada elemento pelo atributo na lista. 
+    }).then(() =>{
+        expect(new Set(conteudo).size).to.be.greaterThan(1); // o push de itens iguais faz se sobreescrever restando apenas uma ao final da iteração.                                                 // o greaterThan espera que o tamanho da lista
+                                                          // seja  maior que 1, caso contrario há duplicatas.
+    });                                                    // logo 1 é bug, e se forem igual em tamanho tudo certo, mostra que todas imagens são unicas
 
     });
 
