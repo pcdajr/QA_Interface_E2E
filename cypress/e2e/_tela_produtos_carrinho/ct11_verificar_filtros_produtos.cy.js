@@ -14,13 +14,13 @@ describe('Tela de produtos - Saucedemo', () => {
 
     // Aqui só pelos valores dentro do <option> a lista suspensa no html, pelo elemento do cypress não consegui.
 
-    cy.get('[data-test="product-sort-container"]').select('az');
+    cy.get('[data-test="product-sort-container"]').select('lohi');
     cy.contains('Sorting is broken! This error has been reported to Backtrace.').should('exist');
 
     cy.get('[data-test="product-sort-container"]').select('za');  
     cy.contains('Sorting is broken! This error has been reported to Backtrace.').should('exist');
     
-    cy.get('[data-test="product-sort-container"]').select('lohi');
+    cy.get('[data-test="product-sort-container"]').select('az');
     cy.contains('Sorting is broken! This error has been reported to Backtrace.').should('exist');  
     
     cy.get('[data-test="product-sort-container"]').select('hilo');
