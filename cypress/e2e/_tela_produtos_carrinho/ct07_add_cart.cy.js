@@ -13,7 +13,7 @@ describe('Tela de produtos - Saucedemo', () => {
 
 
       /*****
-     cy.get('[data-test="add-to-cart-sauce-labs-backpack"]').click();  
+        cy.get('[data-test="add-to-cart-sauce-labs-backpack"]').click();  
         cy.get('[data-test="shopping-cart-badge"]')
          .should("exist")                               aqui foi meu 1º teste um por um, estaticamente."
          .and("be.visible")            
