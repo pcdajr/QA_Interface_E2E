@@ -1,4 +1,4 @@
-describe('Página de login Saucedemo', () => {
+describe('Página de confirmação, pagamento/checkout', () => {
 
    beforeEach(() => {
     cy.visit('/'); 
@@ -27,13 +27,6 @@ describe('Página de login Saucedemo', () => {
     cy.get('[data-test="continue"]').click();
     cy.get('.error-message-container').should('be.visible').and('contain','Error: First Name is required');
     
-
-
-
-
-
-
-
   })
 
 }) 
